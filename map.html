@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9ab1d4ce810d2059bd54f5aa1705bd03 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9ab1d4ce810d2059bd54f5aa1705bd03" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9ab1d4ce810d2059bd54f5aa1705bd03 = L.map(
+                "map_9ab1d4ce810d2059bd54f5aa1705bd03",
+                {
+                    center: [53.52814571098006, -113.51843453203158],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e09d9540c59ce0fcf441fbe389b03681 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e09d9540c59ce0fcf441fbe389b03681.addTo(map_9ab1d4ce810d2059bd54f5aa1705bd03);
+        
+    
+            var feature_group_92cd93ea8c5c89ac944c9958148cf9bb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_5d384b6ab372601eb2d57eacca5783d7 = L.marker(
+                [53.518428816785686, -113.52029318138224],
+                {
+}
+            ).addTo(feature_group_92cd93ea8c5c89ac944c9958148cf9bb);
+        
+    
+            var icon_7492d76dbd8248e4b0bda7f75e6dfd48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ec6c7c07e529d20e087fa6691dbc254 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eefc7002952fc4f0df2bf633799c354f = $(`<div id="html_eefc7002952fc4f0df2bf633799c354f" style="width: 100.0%; height: 100.0%;">Name: Westcorp Properties Inc <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>2</td>       <td>4</td>       <td>1</td>       <td>2</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Italian Centre Shop Ltd.]</td>       <td>[Upper Crust Cafe, Sherlock Holmes Pub, Phobulous, Sawmill Prime Rib &amp; Steakhouse]</td>       <td>[Saville Community Sports Centre]</td>       <td>[Old Strathcona Antique Mall, Hobby Wholesalers]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_7ec6c7c07e529d20e087fa6691dbc254.setContent(html_eefc7002952fc4f0df2bf633799c354f);
+            
+        
+
+        marker_5d384b6ab372601eb2d57eacca5783d7.bindPopup(popup_7ec6c7c07e529d20e087fa6691dbc254)
+        ;
+
+        
+    
+    
+                marker_5d384b6ab372601eb2d57eacca5783d7.setIcon(icon_7492d76dbd8248e4b0bda7f75e6dfd48);
+            
+    
+            var marker_3528ae4372d796444c8af7455afc37dc = L.marker(
+                [53.51781384719587, -113.52026177812003],
+                {
+}
+            ).addTo(feature_group_92cd93ea8c5c89ac944c9958148cf9bb);
+        
+    
+            var icon_f363c498f7612512b650ec324078690e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97c6d0a84e5c195b83b96d6dc66faf2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b4f1deb39beccf7878cca095b402bf6 = $(`<div id="html_1b4f1deb39beccf7878cca095b402bf6" style="width: 100.0%; height: 100.0%;">Name: Concord Tower <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>2</td>       <td>4</td>       <td>1</td>       <td>2</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Italian Centre Shop Ltd.]</td>       <td>[Upper Crust Cafe, Sherlock Holmes Pub, Phobulous, Sawmill Prime Rib &amp; Steakhouse]</td>       <td>[Saville Community Sports Centre]</td>       <td>[Old Strathcona Antique Mall, Hobby Wholesalers]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_97c6d0a84e5c195b83b96d6dc66faf2c.setContent(html_1b4f1deb39beccf7878cca095b402bf6);
+            
+        
+
+        marker_3528ae4372d796444c8af7455afc37dc.bindPopup(popup_97c6d0a84e5c195b83b96d6dc66faf2c)
+        ;
+
+        
+    
+    
+                marker_3528ae4372d796444c8af7455afc37dc.setIcon(icon_f363c498f7612512b650ec324078690e);
+            
+    
+            var marker_703e7e12b9f9d05c793891b73e5da892 = L.marker(
+                [53.51406692567729, -113.51373939221408],
+                {
+}
+            ).addTo(feature_group_92cd93ea8c5c89ac944c9958148cf9bb);
+        
+    
+            var icon_e5017c69384166eb763e5b4036bf8a07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_674cad941f47ecb9eea45d132bb42b68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b924f02bcb4a228902240db2378970f7 = $(`<div id="html_b924f02bcb4a228902240db2378970f7" style="width: 100.0%; height: 100.0%;">Name: Nerd Palace <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>2</td>       <td>4</td>       <td>1</td>       <td>2</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Italian Centre Shop Ltd.]</td>       <td>[Upper Crust Cafe, Sherlock Holmes Pub, Sawmill Prime Rib &amp; Steakhouse, Chili Hot Pot Chinese Restaurant]</td>       <td>[Saville Community Sports Centre]</td>       <td>[Old Strathcona Antique Mall, Hobby Wholesalers]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_674cad941f47ecb9eea45d132bb42b68.setContent(html_b924f02bcb4a228902240db2378970f7);
+            
+        
+
+        marker_703e7e12b9f9d05c793891b73e5da892.bindPopup(popup_674cad941f47ecb9eea45d132bb42b68)
+        ;
+
+        
+    
+    
+                marker_703e7e12b9f9d05c793891b73e5da892.setIcon(icon_e5017c69384166eb763e5b4036bf8a07);
+            
+    
+            feature_group_92cd93ea8c5c89ac944c9958148cf9bb.addTo(map_9ab1d4ce810d2059bd54f5aa1705bd03);
+        
+    
+            var feature_group_b1aa524b51ee0f57135911f0bed9fe84 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ab478a29eef5d74100b438da845d099e = L.marker(
+                [53.53850732196881, -113.52018633434476],
+                {
+}
+            ).addTo(feature_group_b1aa524b51ee0f57135911f0bed9fe84);
+        
+    
+            var icon_5fe4fd844172a47aa3beb1585cfc7d7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71a200e971f87c9a00d268123aca44e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a96e49ee914a11d72d58a61a0ec6eae6 = $(`<div id="html_a96e49ee914a11d72d58a61a0ec6eae6" style="width: 100.0%; height: 100.0%;">Name: LeMarchand Tower <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>3</td>       <td>6</td>       <td>0</td>       <td>1</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Loblaws City Market, Italian Centre Shop Ltd]</td>       <td>[Sugarbowl, Upper Crust Cafe, Sherlock Holmes Pub, On The Rocks, CRAFT Beer Market Edmonton, Block 1912]</td>       <td>[]</td>       <td>[Old Strathcona Antique Mall]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_71a200e971f87c9a00d268123aca44e4.setContent(html_a96e49ee914a11d72d58a61a0ec6eae6);
+            
+        
+
+        marker_ab478a29eef5d74100b438da845d099e.bindPopup(popup_71a200e971f87c9a00d268123aca44e4)
+        ;
+
+        
+    
+    
+                marker_ab478a29eef5d74100b438da845d099e.setIcon(icon_5fe4fd844172a47aa3beb1585cfc7d7b);
+            
+    
+            var marker_34a152c750ec5c67c19fe696d48c2850 = L.marker(
+                [53.53607441884744, -113.50970533865974],
+                {
+}
+            ).addTo(feature_group_b1aa524b51ee0f57135911f0bed9fe84);
+        
+    
+            var icon_704eea2bbe81642690a4b9d86a796b34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bca19aa922f478f52add2d0cd2e38d42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e845b3438c6aa685217c9500e76f05b = $(`<div id="html_2e845b3438c6aa685217c9500e76f05b" style="width: 100.0%; height: 100.0%;">Name: Grandin Manor <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>3</td>       <td>6</td>       <td>0</td>       <td>1</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Italian Centre Shop Ltd, Loblaws City Market]</td>       <td>[Sugarbowl, Sherlock Holmes Pub, Upper Crust Cafe, CRAFT Beer Market Edmonton, Block 1912, On The Rocks]</td>       <td>[]</td>       <td>[Old Strathcona Antique Mall]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_bca19aa922f478f52add2d0cd2e38d42.setContent(html_2e845b3438c6aa685217c9500e76f05b);
+            
+        
+
+        marker_34a152c750ec5c67c19fe696d48c2850.bindPopup(popup_bca19aa922f478f52add2d0cd2e38d42)
+        ;
+
+        
+    
+    
+                marker_34a152c750ec5c67c19fe696d48c2850.setIcon(icon_704eea2bbe81642690a4b9d86a796b34);
+            
+    
+            var marker_1bcbc1e03bd0a90336064cc15c26a249 = L.marker(
+                [53.53994960022502, -113.52588502175594],
+                {
+}
+            ).addTo(feature_group_b1aa524b51ee0f57135911f0bed9fe84);
+        
+    
+            var icon_a642074da47eef286a11a6b5d7d76fc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_918bf0c568bd859894a723e10437f41f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54a3de5f5f04fa087a8c7d91831d2334 = $(`<div id="html_54a3de5f5f04fa087a8c7d91831d2334" style="width: 100.0%; height: 100.0%;">Name: The Mayflower <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>3</td>       <td>6</td>       <td>0</td>       <td>1</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Loblaws City Market, Italian Centre Shop Ltd]</td>       <td>[Sugarbowl, Upper Crust Cafe, Sherlock Holmes Pub, On The Rocks, CRAFT Beer Market Edmonton, Block 1912]</td>       <td>[]</td>       <td>[Old Strathcona Antique Mall]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_918bf0c568bd859894a723e10437f41f.setContent(html_54a3de5f5f04fa087a8c7d91831d2334);
+            
+        
+
+        marker_1bcbc1e03bd0a90336064cc15c26a249.bindPopup(popup_918bf0c568bd859894a723e10437f41f)
+        ;
+
+        
+    
+    
+                marker_1bcbc1e03bd0a90336064cc15c26a249.setIcon(icon_a642074da47eef286a11a6b5d7d76fc8);
+            
+    
+            var marker_de70e94cf6ccbae6d825654a8235cb54 = L.marker(
+                [53.540161336254954, -113.52455202198011],
+                {
+}
+            ).addTo(feature_group_b1aa524b51ee0f57135911f0bed9fe84);
+        
+    
+            var icon_30a1259c352d28cdfbbc600e8e7c1091 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b47c875e7ef114f322c7a19c4710f56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96195413405a108259be010bb9b26a28 = $(`<div id="html_96195413405a108259be010bb9b26a28" style="width: 100.0%; height: 100.0%;">Name: Grosvenor House <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>3</td>       <td>6</td>       <td>0</td>       <td>1</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Loblaws City Market, Italian Centre Shop Ltd]</td>       <td>[Sugarbowl, Upper Crust Cafe, Sherlock Holmes Pub, On The Rocks, CRAFT Beer Market Edmonton, Block 1912]</td>       <td>[]</td>       <td>[Old Strathcona Antique Mall]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_4b47c875e7ef114f322c7a19c4710f56.setContent(html_96195413405a108259be010bb9b26a28);
+            
+        
+
+        marker_de70e94cf6ccbae6d825654a8235cb54.bindPopup(popup_4b47c875e7ef114f322c7a19c4710f56)
+        ;
+
+        
+    
+    
+                marker_de70e94cf6ccbae6d825654a8235cb54.setIcon(icon_30a1259c352d28cdfbbc600e8e7c1091);
+            
+    
+            feature_group_b1aa524b51ee0f57135911f0bed9fe84.addTo(map_9ab1d4ce810d2059bd54f5aa1705bd03);
+        
+    
+            var feature_group_2a4677785e91f7b923d3be85b9ba0e0f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_2d8a9bc6f468cc73d8b0dbe20c934796 = L.marker(
+                [53.51631466036103, -113.5055745451118],
+                {
+}
+            ).addTo(feature_group_2a4677785e91f7b923d3be85b9ba0e0f);
+        
+    
+            var icon_2e36780c17df95d906e5ebc127221656 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8ed849cf7564fc9e389789ea089a898 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dc7f3af2a913e5209348384a9e3513f = $(`<div id="html_7dc7f3af2a913e5209348384a9e3513f" style="width: 100.0%; height: 100.0%;">Name: Harvest Manor <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>2</td>       <td>5</td>       <td>0</td>       <td>2</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Italian Centre Shop Ltd.]</td>       <td>[Sugarbowl, Upper Crust Cafe, Sherlock Holmes Pub, Chili Hot Pot Chinese Restaurant, Sawmill Prime Rib &amp; Steakhouse]</td>       <td>[]</td>       <td>[Old Strathcona Antique Mall, Hobby Wholesalers]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_f8ed849cf7564fc9e389789ea089a898.setContent(html_7dc7f3af2a913e5209348384a9e3513f);
+            
+        
+
+        marker_2d8a9bc6f468cc73d8b0dbe20c934796.bindPopup(popup_f8ed849cf7564fc9e389789ea089a898)
+        ;
+
+        
+    
+    
+                marker_2d8a9bc6f468cc73d8b0dbe20c934796.setIcon(icon_2e36780c17df95d906e5ebc127221656);
+            
+    
+            feature_group_2a4677785e91f7b923d3be85b9ba0e0f.addTo(map_9ab1d4ce810d2059bd54f5aa1705bd03);
+        
+    
+            var feature_group_d4a46e7261aad1876454568029075e16 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_219bc8ae440118bb8d01ce2112b6844d = L.marker(
+                [53.51935528670875, -113.51892061589109],
+                {
+}
+            ).addTo(feature_group_d4a46e7261aad1876454568029075e16);
+        
+    
+            var icon_a0fbc6c0b93710e8fc1ac329cb9fb9a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ca284d7daec1891856ffeac52df9e08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e42806ee438940321e644979247d6f6 = $(`<div id="html_5e42806ee438940321e644979247d6f6" style="width: 100.0%; height: 100.0%;">Name: University Plaza Condos <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>3</td>       <td>3</td>       <td>1</td>       <td>2</td>     </tr>     <tr>       <th>Details</th>       <td>[Old Strathcona Farmers' Market, Italian Centre Shop Ltd., Italian Centre Shop Ltd]</td>       <td>[Upper Crust Cafe, Sherlock Holmes Pub, Phobulous]</td>       <td>[Saville Community Sports Centre]</td>       <td>[Old Strathcona Antique Mall, Hobby Wholesalers]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_8ca284d7daec1891856ffeac52df9e08.setContent(html_5e42806ee438940321e644979247d6f6);
+            
+        
+
+        marker_219bc8ae440118bb8d01ce2112b6844d.bindPopup(popup_8ca284d7daec1891856ffeac52df9e08)
+        ;
+
+        
+    
+    
+                marker_219bc8ae440118bb8d01ce2112b6844d.setIcon(icon_a0fbc6c0b93710e8fc1ac329cb9fb9a2);
+            
+    
+            feature_group_d4a46e7261aad1876454568029075e16.addTo(map_9ab1d4ce810d2059bd54f5aa1705bd03);
+        
+    
+            var feature_group_15acd5a8140a93c84ac741cc8416342a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_deb290030e4d0ce67f054f2d7f2de4f9 = L.marker(
+                [53.54078489577575, -113.52522709085598],
+                {
+}
+            ).addTo(feature_group_15acd5a8140a93c84ac741cc8416342a);
+        
+    
+            var icon_c5b72fa264a191b7984bec3ab8952c7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bb4738b0782a75bc4461aac887dc9d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_504c7e20a4fd67d342ee32fe65cc9a13 = $(`<div id="html_504c7e20a4fd67d342ee32fe65cc9a13" style="width: 100.0%; height: 100.0%;">Name: Serenity Residential Tower <table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>grocery</th>       <th>restaurants</th>       <th>sports/rec</th>       <th>shopping/retail</th>     </tr>   </thead>   <tbody>     <tr>       <th>Count</th>       <td>4</td>       <td>5</td>       <td>0</td>       <td>1</td>     </tr>     <tr>       <th>Details</th>       <td>[Loblaws City Market, Old Strathcona Farmers' Market, Italian Centre Shop Ltd, Save-On-Foods]</td>       <td>[Sugarbowl, Sherlock Holmes Pub, Upper Crust Cafe, On The Rocks, CRAFT Beer Market Edmonton]</td>       <td>[]</td>       <td>[Old Strathcona Antique Mall]</td>     </tr>   </tbody> </table></div>`)[0];
+                popup_4bb4738b0782a75bc4461aac887dc9d3.setContent(html_504c7e20a4fd67d342ee32fe65cc9a13);
+            
+        
+
+        marker_deb290030e4d0ce67f054f2d7f2de4f9.bindPopup(popup_4bb4738b0782a75bc4461aac887dc9d3)
+        ;
+
+        
+    
+    
+                marker_deb290030e4d0ce67f054f2d7f2de4f9.setIcon(icon_c5b72fa264a191b7984bec3ab8952c7e);
+            
+    
+            feature_group_15acd5a8140a93c84ac741cc8416342a.addTo(map_9ab1d4ce810d2059bd54f5aa1705bd03);
+        
+    
+            var feature_group_d0e0e8e89ce0e4480d62bb38f55909a3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_d0e0e8e89ce0e4480d62bb38f55909a3.addTo(map_9ab1d4ce810d2059bd54f5aa1705bd03);
+        
+    
+            var marker_bdb7948cfed1c37d51f10e8fb52725c2 = L.marker(
+                [53.52339920030489, -113.52633777322835],
+                {
+}
+            ).addTo(map_9ab1d4ce810d2059bd54f5aa1705bd03);
+        
+    
+            var icon_c248e370b4cbdeb0870b429a896dc8b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89de21870661c1738adc78f371a53baf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2ef58d58a41da12ae6ac40052cf20b8 = $(`<div id="html_c2ef58d58a41da12ae6ac40052cf20b8" style="width: 100.0%; height: 100.0%;">53.52339920030489, -113.52633777322835</div>`)[0];
+                popup_89de21870661c1738adc78f371a53baf.setContent(html_c2ef58d58a41da12ae6ac40052cf20b8);
+            
+        
+
+        marker_bdb7948cfed1c37d51f10e8fb52725c2.bindPopup(popup_89de21870661c1738adc78f371a53baf)
+        ;
+
+        
+    
+    
+                marker_bdb7948cfed1c37d51f10e8fb52725c2.setIcon(icon_c248e370b4cbdeb0870b429a896dc8b3);
+            
+</script>
+</html>
